@@ -13,5 +13,6 @@ namespace Projeto_Gamer_manha.Models
 
         [ForeignKey("Equipe")]
         public int IdEquipe { get; set; } 
+        public Equipe Equipe { get; set; } 
     } 
 }

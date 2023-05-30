@@ -31,7 +31,7 @@ namespace Projeto_Gamer_manha.Infra
                 // autenticacao pelo SqlServer
                 // Id User = "nome do seu usuario de login"
                 // password = "senha do usuario"
-                optionsBuilder.UseSqlServer("Data Source = ");
+                optionsBuilder.UseSqlServer("Data Source = NOTE10-S14; Initial catalog = gamerManha; User Id = sa; pwd = Senai@134; TrustServerCertificate = true ");
             }
         }
 
