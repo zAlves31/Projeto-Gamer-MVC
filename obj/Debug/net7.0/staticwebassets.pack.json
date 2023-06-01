@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\G2_Esports_2019_lightmode.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\G2_Esports_2019_lightmode.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\png-transparent-team-liquid-hd-logo.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\png-transparent-team-liquid-hd-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\santos-logo-escudo-9.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\santos-logo-escudo-9.png"
+    },
+    {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

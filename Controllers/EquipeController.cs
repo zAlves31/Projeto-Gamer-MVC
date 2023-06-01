@@ -32,8 +32,8 @@ namespace Projeto_Gamer_manha.Controllers
             // instancia do objeto equipe
             Equipe novaEquipe = new Equipe();
 
-            // atribuicao de valores recebidos do formulario 
-            // novaEquipe.Nome = form["Nome"].ToString();
+            //atribuicao de valores recebidos do formulario 
+            novaEquipe.Nome = form["Nome"].ToString();
 
             // inicio da logica do upload de imagem
             if (form.Files.Count > 0)
@@ -64,8 +64,7 @@ namespace Projeto_Gamer_manha.Controllers
                 novaEquipe.Imagem = "padrao.png";
             }
             
-            // aqui estava chegando como string (nao queremos assim)
-            novaEquipe.Imagem = form["Imagem"].ToString();
+            
 
             // adiciona objeto na tabela do BD
             c.Equipe.Add(novaEquipe);
@@ -81,6 +80,18 @@ namespace Projeto_Gamer_manha.Controllers
         public IActionResult Error()
         {
             return View("Error!");
+        }
+
+        [Route("Exluir/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            Equipe equipeBuscada = c.Equipe.FirstOrDefault(e=> e.IdEquipe == id);
+
+            c.Remove(equipeBuscada);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
         }
     }
 }
