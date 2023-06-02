@@ -25,6 +25,7 @@
         <th>Id</th>
         <th>Nome</th>
         <th>Imagem</th>
+        <th>Ações</th>
     </thead>
 
     <tbody>
@@ -39,6 +40,9 @@
                 </td>
                 <td>
                     <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
                 </td>
             </tr>  
         }
