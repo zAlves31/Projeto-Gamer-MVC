@@ -1,0 +1,22 @@
+@model Jogador
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edicao de Jogador</h1>
+
+<form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
+
+    <label for="">Nome</label>
+    <input type="text" name="Nome" required>
+
+    <label for="">Email</label>
+    <input type="text" name="Email" required>
+
+    <label for="">Senha</label>
+    <input type="text" name="Senha" required>
+
+    <button type="submit">Atualizar</button>
+
+</form>

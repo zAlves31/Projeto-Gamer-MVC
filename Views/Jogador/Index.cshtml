@@ -1,17 +1,43 @@
 @model Jogador
 
 @{
-    ViewData["Title"] = "Jogadores";
+    ViewData["Title"] = "Jogador";
 }
 
 <h1>Tela de Jogadores</h1>
+
+<form method= "post" action="@Url.Action("Cadastrar")" enctype="multipart/form-data" >
+    
+    <label for="">Nome</label>
+    <input type="text" name="Nome" required>
+
+    <label for="">Email</label>
+    <input type="text" name="Email" required>
+
+    <label for="">Senha</label>
+    <input type="text" name="Senha" required>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
 
 <table class="table table-striped table-responsive">
     <thead>
         <th>Id</th>
         <th>Nome</th>
         <th>Email</th>
-        <th>Imagem</th>
     </thead>
 
+    <tbody>
+        @foreach (Jogador jogador in ViewBag.Jogador)
+        {
+           <tr>
+                <td>@jogador.IdJogador</td>
+                <td>@jogador.Nome</td>
+                <td>
+                    <a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogador.IdJogador">Editar</a>
+                </td>
+            </tr>  
+        }
+    </tbody>
 </table>
