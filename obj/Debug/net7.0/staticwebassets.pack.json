@@ -13,8 +13,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\15669361935d658c813015b_1566936193_3x2_md.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipes\\15669361935d658c813015b_1566936193_3x2_md.jpg"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\Escudo-Flamengo-Png-1024x1024.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Escudo-Flamengo-Png-1024x1024.png"
+    },
+    {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\G2_Esports_2019_lightmode.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\G2_Esports_2019_lightmode.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\R (1).png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\R (1).png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\R.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\R.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\corinthians-logo-01-1645x2048.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\corinthians-logo-01-1645x2048.png"
     },
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\png-transparent-team-liquid-hd-logo.png",
@@ -23,6 +43,10 @@
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\santos-logo-escudo-9.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\santos-logo-escudo-9.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\img\\Equipes\\sao-paulo.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\sao-paulo.png"
     },
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-manha\\wwwroot\\js\\site.js",

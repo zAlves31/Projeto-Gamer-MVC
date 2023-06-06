@@ -40,11 +40,16 @@ namespace Projeto_Gamer_manha.Controllers
             //atribuicao de valores recebidos do formulario 
             novoJogador.Nome = form["Nome"].ToString();
 
-            novoJogador.Nome = form["Email"].ToString();
+            novoJogador.Email = form["Email"].ToString();
 
-            novoJogador.Nome = form["Senha"].ToString();
+            novoJogador.Senha = form["Senha"].ToString();
 
-            return LocalRedirect("~/Jogador");
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            c.Jogador.Add(novoJogador);
+            c.SaveChanges();  
+
+            return LocalRedirect("~/Jogador/Listar");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -62,7 +67,7 @@ namespace Projeto_Gamer_manha.Controllers
 
             c.SaveChanges();
 
-            return LocalRedirect("~/Jogador");
+            return LocalRedirect("~/Jogador/Listar");
         }
 
         [Route("Editar/{id}")]
@@ -75,6 +80,30 @@ namespace Projeto_Gamer_manha.Controllers
             return View("Edit");
         } 
 
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        {
+            Jogador jogador = new Jogador ();
+
+            jogador.IdJogador = int.Parse(form["IdJogador"].ToString());
+
+            jogador.Nome = form["Nome"].ToString();
+            jogador.Email = form["Email"].ToString();
+            jogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            Jogador jogadorBuscado = c.Jogador.First(x => x.IdJogador == jogador.IdJogador);
+
+            jogadorBuscado.Nome = jogador.Nome;
+            jogadorBuscado.Email = jogador.Email;
+            jogadorBuscado.IdEquipe = jogador.IdEquipe;
+
+            c.Jogador.Update(jogadorBuscado);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
+
+        }    
         
     }
 }

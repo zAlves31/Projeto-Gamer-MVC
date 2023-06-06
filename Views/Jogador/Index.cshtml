@@ -12,10 +12,13 @@
     <input type="text" name="Nome" required>
 
     <label for="">Email</label>
-    <input type="text" name="Email" required>
+    <input type="email" name="Email" required>
 
     <label for="">Senha</label>
-    <input type="text" name="Senha" required>
+    <input type="password" name="Senha" required>
+
+    <label for="">Id</label>
+    <input type="number" name="IdEquipe" required>
 
     <button type="submit">Cadastrar</button>
 
@@ -26,6 +29,8 @@
         <th>Id</th>
         <th>Nome</th>
         <th>Email</th>
+        <th>Imagem</th>
+        <th>Ações</th>
     </thead>
 
     <tbody>
@@ -34,6 +39,13 @@
            <tr>
                 <td>@jogador.IdJogador</td>
                 <td>@jogador.Nome</td>
+                <td>@jogador.Email</td>
+                <td>
+                    <img src="/img/Equipes/@jogador.Equipe.Imagem" alt="Imagem da Equipe @jogador.IdEquipe" width="50px">
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador">Excluir</a>
+                </td>
                 <td>
                     <a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogador.IdJogador">Editar</a>
                 </td>
