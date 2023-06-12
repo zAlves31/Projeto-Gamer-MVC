@@ -28,6 +28,7 @@ namespace Projeto_Gamer_manha.Controllers
             ViewBag.Jogador = c.Jogador.ToList();
             ViewBag.Equipe = c.Equipe.ToList();
 
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return View();
         }
 
@@ -77,6 +78,7 @@ namespace Projeto_Gamer_manha.Controllers
 
             ViewBag.Jogador = jogador;
 
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return View("Edit");
         } 
 

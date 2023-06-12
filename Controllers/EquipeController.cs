@@ -23,6 +23,7 @@ namespace Projeto_Gamer_manha.Controllers
             // variavel que armazena as equipes listadas do banco de dados
             ViewBag.Equipe = c.Equipe.ToList();
 
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return View();
         }
 
