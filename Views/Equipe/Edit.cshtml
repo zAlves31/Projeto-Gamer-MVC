@@ -8,22 +8,24 @@
 
 @if (ViewBag.UserName == null)
 {
+    <p>Usuario nao Logado!</p>
     <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
-        Login
+       Logar
     </a>
-}   
+}
 else
 {
-    <form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
 
-        <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
+<form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data"> 
 
-        <label for="">Nome</label>
-        <input type="text" name="Nome" value="@ViewBag.Equipe.Nome">
+    <input type="Hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
 
-        <label for="">Imagem</label>
-        <input type="file" name="Imagem"  value="@ViewBag.Equipe.Imagem">
-        <button type="submit">Atualizar</button>
+    <label for=""></label>
+    <input type="text" name="Nome" value="@ViewBag.Equipe.Nome">
 
-    </form>
+    <label for=""></label>
+    <input type="file" name="Imagem" value="@ViewBag.Equipe.Imagem">
+
+    <button type="submit">Atualizar</button>
+</form>
 }

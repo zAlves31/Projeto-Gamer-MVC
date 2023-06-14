@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nlXLcGIxg+aVyiANZWysjqBilMqu1VvQOLVKJs2C+yA=",
+  "Hash": "82XVOamgbtfMTT0OveoOZ6j+ahQJGhJK/1Sj/EuS938=",
   "Source": "Projeto-Gamer-manha",
   "BasePath": "_content/Projeto-Gamer-manha",
   "Mode": "Default",
@@ -1054,6 +1054,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\vector-user.svg"
     },
     {
+      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Equipe.css",
+      "SourceId": "Projeto-Gamer-manha",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto-Gamer-manha",
+      "RelativePath": "css/Equipe.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Equipe.css"
+    },
+    {
       "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Header-Footer.css",
       "SourceId": "Projeto-Gamer-manha",
       "SourceType": "Discovered",
@@ -1071,6 +1088,23 @@
       "OriginalItemSpec": "wwwroot\\css\\Header-Footer.css"
     },
     {
+      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Jogadores.css",
+      "SourceId": "Projeto-Gamer-manha",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto-Gamer-manha",
+      "RelativePath": "css/Jogadores.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Jogadores.css"
+    },
+    {
       "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Login.css",
       "SourceId": "Projeto-Gamer-manha",
       "SourceType": "Discovered",
@@ -1086,23 +1120,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
-    },
-    {
-      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\NewClass.cs",
-      "SourceId": "Projeto-Gamer-manha",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
-      "BasePath": "_content/Projeto-Gamer-manha",
-      "RelativePath": "css/NewClass.cs",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\NewClass.cs"
     },
     {
       "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\site.css",
@@ -1596,6 +1613,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\G2_Esports_2019_lightmode.png"
+    },
+    {
+      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\logo-fortaleza-1024.png",
+      "SourceId": "Projeto-Gamer-manha",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto-Gamer-manha",
+      "RelativePath": "img/Equipes/logo-fortaleza-1024.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\logo-fortaleza-1024.png"
     },
     {
       "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\png-transparent-team-liquid-hd-logo.png",

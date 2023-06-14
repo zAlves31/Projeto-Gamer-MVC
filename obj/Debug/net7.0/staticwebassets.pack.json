@@ -241,16 +241,20 @@
       "PackagePath": "staticwebassets\\assets\\vector-user.svg"
     },
     {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Equipe.css",
+      "PackagePath": "staticwebassets\\css\\Equipe.css"
+    },
+    {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Header-Footer.css",
       "PackagePath": "staticwebassets\\css\\Header-Footer.css"
     },
     {
-      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Login.css",
-      "PackagePath": "staticwebassets\\css\\Login.css"
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Jogadores.css",
+      "PackagePath": "staticwebassets\\css\\Jogadores.css"
     },
     {
-      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\NewClass.cs",
-      "PackagePath": "staticwebassets\\css\\NewClass.cs"
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\site.css",
@@ -375,6 +379,10 @@
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\corinthians-logo-01-1645x2048.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\corinthians-logo-01-1645x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\logo-fortaleza-1024.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\logo-fortaleza-1024.png"
     },
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\png-transparent-team-liquid-hd-logo.png",
