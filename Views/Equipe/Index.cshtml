@@ -1,60 +1,91 @@
 @model Equipe
 
+<link rel="stylesheet" href="~/css/Equipe.css">
+
 @{
     ViewData["Title"] = "Equipe";
 }
 
-<h1>Tela de Equipes</h1>
-
-@if (ViewBag.UserName == null)
-{
-    <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
-        Login
-    </a>
-}   
-else
-{
-    <form method="post" action="@Url.Action("Cadastrar")" enctype="multipart/form-data">
-
-    <label for="">Nome</label>
-    <input type="text" name="Nome" required>
-
-    <label for="">Imagem</label>
-    <input type="file" name="Imagem">
-
-    <button type="submit">Cadastrar</button>
-
-    </form>
 
 
-    <table class="table table-striped table-responsive">
-        <thead>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Imagem</th>
-            <th>Ações</th>
-        </thead>
+<!-- MAIN -->
+<main>
 
-        <tbody>
-            
-            @foreach (Equipe equipe in ViewBag.Equipe)
-            {
+
+
+    @if (ViewBag.UserName == null)
+    {
+        <p>Usuario nao Logado!</p>
+        <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
+            Logar
+        </a>
+    }
+    else
+    {
+
+        <section class="container-grid cadastro-equipes">
+
+            <form class="frm-cad-equipe" method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+                <div class="cadequipe-titulo">
+                    <h1>Cadastro de Equipes</h1>
+                    <hr>
+                </div>
+
+                <input class="campo-entrada" type="text" name="Nome" placeholder="Digite o nome da sua equipe:" required>
+
+
+                <label class="foto" for="foto-file">
+                    Nenhuma imagem selecionada...
+                    <input type="file" id="foto-file" name="Imagem">
+                </label>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+            @* Criando tabela de equipe *@
+            <table class="table table-striped table-responsive">
+                @* cabeça da tabela *@
                 <tr>
-                    <td>@equipe.IdEquipe</td>
-                    <td>@equipe.Nome</td>
-                    <td>
-                        <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
-                    </td>
-                    <td>
-                        <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe" >Excluir</a>
-                    </td>
-                    <td>
-                        <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
-                    </td>
-                </tr>            
-            }
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Imagem</th>
+                    <th>Excluir</th>
+                    <th>Editar</th>
+                </tr>
 
-        </tbody>
+                @* corpo da tabela *@
+                <tbody>
+                    0
+                    @* viewbag objeto da classe equipe *@
+                    @foreach (Equipe equipe in ViewBag.Equipe)
+                    {
+                        <tr>
+                            <td>@equipe.IdEquipe</td>
+                            <td>@equipe.Nome</td>
+                            @*para exibir a imagem cadastrada*@
+                            <td>
+                                <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
+                            </td>
+                            @*excluir uma equipe*@
+                            <td>
+                                <a asp-area="" asp-controller="Equipe" asp-action="Excluir"
+                                    asp-route-id="@equipe.IdEquipe">Excluir</a>
+                            </td>
+                            <td>
+                                <a asp-area="" asp-controller="Equipe" asp-action="Editar"
+                                    asp-route-id="@equipe.IdEquipe">Editar</a>
+                            </td>
+                        </tr>
+                    }
 
-    </table>
-}
+                </tbody>
+            </table>
+
+        </section>
+    }
+
+
+</main>
+
+

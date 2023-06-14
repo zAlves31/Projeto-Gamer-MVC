@@ -241,6 +241,18 @@
       "PackagePath": "staticwebassets\\assets\\vector-user.svg"
     },
     {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Header-Footer.css",
+      "PackagePath": "staticwebassets\\css\\Header-Footer.css"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\NewClass.cs",
+      "PackagePath": "staticwebassets\\css\\NewClass.cs"
+    },
+    {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,15 +1,18 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - projeto_gamer_manha</title>
+    <title>@ViewData["Title"] - Projeto Gamer</title>
     <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/Header-Footer.css">
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="header">
+    <!-- HEADER -->
+    <header class="header">
         <div class="header-top">
             <div class="container-grid header-top-flex">
                 <div>
@@ -46,15 +49,16 @@
                 <input type="checkbox" id="mostra-esconde-navmenu">
                 <div class="nav-bkg">
                     <nav>
+                        <a href="#"></a>
                         <a asp-controller="Home" asp-action="Index">Início</a>
                         <a href="~/#noticias">Notícias</a>
-                        @if (ViewBag.UserName !=null)
+                        @if (ViewBag.UserName != null)
                         {
                             <a asp-controller="Equipe" asp-action="Index">Equipes</a>
                             <a asp-controller="Jogador" asp-action="Index">Jogadores</a>
                             <a asp-controller="Login" asp-action="Logout">Logout</a>
                         }
-                        
+                       
 
                         <a class="phone-box">
                             <img src="~/assets/phone-icon.png" alt="phone icon" title="Ícone Telefone">
@@ -81,25 +85,29 @@
                 <input type="checkbox" id="mostra-esconde-icones">
                 <div class="icons-header-bkg">
                     <div class="icons-header">
-
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">
+                        <a class="nav-link text-dark" asp-controller="Login" asp-action="Index">
                             <img src="~/assets/user-icon.svg" alt="user-login">
                         </a>
-
                         <img src="~/assets/market-icon.png" alt="market icon">
                         <img src="~/assets/search-icon.png" alt="search icon">
                     </div>
                 </div>
             </div>
         </div>
-</header>
+    </header>
 
 
-@RenderBody()
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
 
 
-<!-- FOOTER -->
-<footer>
+
+    <!-- FOOTER -->
+    <footer>
         <div class="container-grid footer-flex">
 
             <div class="card-ftitem-box">
@@ -172,12 +180,13 @@
         </div>
 
         <div id="copyright">
-            &#169;Copyright2023-GamerJogosDigitais
+            &#169;Copyright2022-GamerJogosDigitais
         </div>
 
         <img src="~/assets/Botao_voltar_ao_topo.svg" id="back-to-top" alt="Voltar ao Topo">
-</footer>
+    </footer>
 
-   @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
