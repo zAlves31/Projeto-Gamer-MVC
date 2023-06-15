@@ -190,7 +190,7 @@ main .cadastro-equipes table thead th {
 /* linhas da tabela, independentemente do cabeçalho ou corpo */
 main .cadastro-equipes table tr {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 

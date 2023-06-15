@@ -70,7 +70,9 @@
                             @*excluir uma equipe*@
                             <td>
                                 <a asp-area="" asp-controller="Equipe" asp-action="Excluir"
-                                    asp-route-id="@equipe.IdEquipe">Excluir</a>
+                                    asp-route-id="@equipe.IdEquipe">
+                                    <img class="yellow-trash" src="~/assets/trash.png" alt="">
+                                    </a>
                             </td>
                             <td>
                                 <a asp-area="" asp-controller="Equipe" asp-action="Editar"
