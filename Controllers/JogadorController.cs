@@ -1,14 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Projeto_Gamer_manha.Infra;
 using Projeto_Gamer_manha.Models;
 
-namespace Projeto_Gamer_manha.Controllers
+namespace Gamer_BancoDeDados.Controllers
 {
     [Route("[controller]")]
     public class JogadorController : Controller
@@ -22,44 +16,44 @@ namespace Projeto_Gamer_manha.Controllers
 
         Context c = new Context();
 
+
         [Route("Listar")]
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             ViewBag.Jogador = c.Jogador.ToList();
             ViewBag.Equipe = c.Equipe.ToList();
 
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return View();
         }
 
+
         [Route("Cadastrar")]
-        public IActionResult Cadastrar (IFormCollection form)
+        public IActionResult Cadastrar(IFormCollection form)
         {
-            // instancia do objeto equipe
+            ViewBag.Equipe = c.Equipe.ToList();
+
             Jogador novoJogador = new Jogador();
 
-            //atribuicao de valores recebidos do formulario 
+
             novoJogador.Nome = form["Nome"].ToString();
-
             novoJogador.Email = form["Email"].ToString();
-
             novoJogador.Senha = form["Senha"].ToString();
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"]);
 
-            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
 
             c.Jogador.Add(novoJogador);
-            c.SaveChanges();  
+
+            c.SaveChanges();
+
+            // atualiza a lista 
+            ViewBag.Jogador = c.Jogador.ToList();
 
             return LocalRedirect("~/Jogador/Listar");
+
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
-        }
-
-         [Route("Exluir/{id}")]
+        [Route("Excluir/{id}")]
         public IActionResult Excluir(int id)
         {
             Jogador jogadorBuscado = c.Jogador.FirstOrDefault(e => e.IdJogador == id);
@@ -74,18 +68,21 @@ namespace Projeto_Gamer_manha.Controllers
         [Route("Editar/{id}")]
         public IActionResult Editar(int id)
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+
             Jogador jogador = c.Jogador.First(x => x.IdJogador == id);
 
             ViewBag.Jogador = jogador;
+            ViewBag.Equipe = c.Equipe.ToList();
 
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return View("Edit");
-        } 
+
+        }
 
         [Route("Atualizar")]
         public IActionResult Atualizar(IFormCollection form)
         {
-            Jogador jogador = new Jogador ();
+            Jogador jogador = new Jogador();
 
             jogador.IdJogador = int.Parse(form["IdJogador"].ToString());
 
@@ -93,7 +90,9 @@ namespace Projeto_Gamer_manha.Controllers
             jogador.Email = form["Email"].ToString();
             jogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
 
+
             Jogador jogadorBuscado = c.Jogador.First(x => x.IdJogador == jogador.IdJogador);
+
 
             jogadorBuscado.Nome = jogador.Nome;
             jogadorBuscado.Email = jogador.Email;
@@ -104,8 +103,13 @@ namespace Projeto_Gamer_manha.Controllers
             c.SaveChanges();
 
             return LocalRedirect("~/Jogador/Listar");
+        }
 
-        }    
-        
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View("Error!");
+        }
     }
 }

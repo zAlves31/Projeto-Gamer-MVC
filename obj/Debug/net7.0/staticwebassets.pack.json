@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\assets\\Botao_voltar_ao_topo.svg"
     },
     {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\edit-amarelo.png",
+      "PackagePath": "staticwebassets\\assets\\edit-amarelo.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\edit_yellow.svg",
+      "PackagePath": "staticwebassets\\assets\\edit_yellow.svg"
+    },
+    {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\envelope-icon.png",
       "PackagePath": "staticwebassets\\assets\\envelope-icon.png"
     },
@@ -193,6 +201,10 @@
       "PackagePath": "staticwebassets\\assets\\linkedin.svg"
     },
     {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\lixo-amarelo.png",
+      "PackagePath": "staticwebassets\\assets\\lixo-amarelo.png"
+    },
+    {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\logotipo-gamer.png",
       "PackagePath": "staticwebassets\\assets\\logotipo-gamer.png"
     },
@@ -367,6 +379,10 @@
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\G2_Esports_2019_lightmode.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\G2_Esports_2019_lightmode.png"
+    },
+    {
+      "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\G2_Esportslogo_square.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\G2_Esportslogo_square.png"
     },
     {
       "Id": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\R (1).png",

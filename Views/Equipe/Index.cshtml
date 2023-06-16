@@ -6,88 +6,77 @@
     ViewData["Title"] = "Equipe";
 }
 
-
-
 <!-- MAIN -->
 <main>
+    <section class="container-grid cadastro-equipes">
+    <span>@TempData.Peek("Message")</span>
+        @if (ViewBag.UserName == null)
+        {
+            <h1>Usuario nao Logado!</h1>
+            <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
+                Logar
+            </a>
+        }
+        else
+        {
+                <form class="frm-cad-equipe" method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+                    <div class="cadequipe-titulo">
+                        <h1>Cadastro de Equipes</h1>
+                        <hr>
+                    </div>
+
+                    <input class="campo-entrada" type="text" name="Nome" placeholder="Digite o nome da sua equipe:" required>
 
 
+                    <label class="foto" for="foto-file">
+                        Nenhuma imagem selecionada...
+                        <input type="file" id="foto-file" name="Imagem">
+                    </label>
 
-    @if (ViewBag.UserName == null)
-    {
-        <p>Usuario nao Logado!</p>
-        <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
-            Logar
-        </a>
-    }
-    else
-    {
+                    <button type="submit">Cadastrar</button>
 
-        <section class="container-grid cadastro-equipes">
-
-            <form class="frm-cad-equipe" method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
-                <div class="cadequipe-titulo">
-                    <h1>Cadastro de Equipes</h1>
-                    <hr>
-                </div>
-
-                <input class="campo-entrada" type="text" name="Nome" placeholder="Digite o nome da sua equipe:" required>
+                </form>
 
 
-                <label class="foto" for="foto-file">
-                    Nenhuma imagem selecionada...
-                    <input type="file" id="foto-file" name="Imagem">
-                </label>
-
-                <button type="submit">Cadastrar</button>
-
-            </form>
-
-            @* Criando tabela de equipe *@
-            <table class="table table-striped table-responsive">
-                @* cabeça da tabela *@
-                <tr>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Imagem</th>
-                    <th>Excluir</th>
-                    <th>Editar</th>
-                </tr>
-
-                @* corpo da tabela *@
-                <tbody>
-                    0
-                    @* viewbag objeto da classe equipe *@
-                    @foreach (Equipe equipe in ViewBag.Equipe)
-                    {
+                <table class="table table-striped table-responsive">
+                    <thead>
                         <tr>
-                            <td>@equipe.IdEquipe</td>
-                            <td>@equipe.Nome</td>
-                            @*para exibir a imagem cadastrada*@
-                            <td>
-                                <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
-                            </td>
-                            @*excluir uma equipe*@
-                            <td>
-                                <a asp-area="" asp-controller="Equipe" asp-action="Excluir"
-                                    asp-route-id="@equipe.IdEquipe">
-                                    <img class="yellow-trash" src="~/assets/trash.png" alt="">
-                                    </a>
-                            </td>
-                            <td>
-                                <a asp-area="" asp-controller="Equipe" asp-action="Editar"
-                                    asp-route-id="@equipe.IdEquipe">Editar</a>
-                            </td>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Foto</th>
+                            <th>&spades;</th>
                         </tr>
-                    }
+                    </thead>
+                    <tbody>
+                        @foreach (Equipe equipe in ViewBag.Equipe)
+                        {
+                            <tr>
+                                <td>@equipe.IdEquipe</td>
+                                <td>@equipe.Nome</td>
+                                <td>
+                                    <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
+                                </td>
+                                <td>
+                                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir"
+                                        asp-route-id="@equipe.IdEquipe"> 
+                                        <img class="yellow-trash" src="~/assets/trash.png" alt="">
+                                    </a>
 
-                </tbody>
-            </table>
+                                    <a asp-area="" asp-controller="Equipe" asp-action="Editar"
+                                        asp-route-id="@equipe.IdEquipe">
+                                        <img class="edit-trash" src="~/assets/edit-amarelo.png" alt="">
+                                    </a>
+                                </td> 
+                            </tr>
+                        }
 
-        </section>
-    }
+                    </tbody>
+                </table>
+        }
 
-
+    </section>
 </main>
+
+
 
 

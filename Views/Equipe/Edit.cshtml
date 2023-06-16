@@ -1,31 +1,42 @@
 @model Equipe
 
+<link rel="stylesheet" href="~/css/Equipe.css">
+
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edição de Equipe</h1>
+<main>
+    <section class="container-grid cadastro-equipes">
+    <span>@TempData.Peek("Message")</span>
+        @if (ViewBag.UserName == null)
+        {
+            <h1>Usuario nao Logado!</h1>
+            <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
+                Logar
+            </a>
+        }
+        else
+        {
+            <form class="frm-cad-equipe" method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
+                <div class="cadequipe-titulo">
+                    <h1>Edicao de Equipes</h1>
+                    <hr>
+                </div>
 
-@if (ViewBag.UserName == null)
-{
-    <p>Usuario nao Logado!</p>
-    <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
-       Logar
-    </a>
-}
-else
-{
+                <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
 
-<form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data"> 
+                <input class="campo-entrada" type="text" name="Nome" value="@ViewBag.Equipe.Nome">
 
-    <input type="Hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
+                <label class="foto" for="foto-file">
+                    Nenhuma imagem selecionada
+                    <input type="file" id="foto-file" name="Imagem">
+                </label>
 
-    <label for=""></label>
-    <input type="text" name="Nome" value="@ViewBag.Equipe.Nome">
+                <button type="submit">Atualizar</button>
 
-    <label for=""></label>
-    <input type="file" name="Imagem" value="@ViewBag.Equipe.Imagem">
+            </form>
 
-    <button type="submit">Atualizar</button>
-</form>
-}
+        }
+    </section>
+</main>

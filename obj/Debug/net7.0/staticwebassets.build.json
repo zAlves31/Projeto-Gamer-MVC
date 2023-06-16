@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "82XVOamgbtfMTT0OveoOZ6j+ahQJGhJK/1Sj/EuS938=",
+  "Hash": "Ocahi2aPG2NuwlR7tOvyuLTquMcMA27OE16CZv1G3CE=",
   "Source": "Projeto-Gamer-manha",
   "BasePath": "_content/Projeto-Gamer-manha",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\Botao_voltar_ao_topo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\edit_yellow.svg",
+      "SourceId": "Projeto-Gamer-manha",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto-Gamer-manha",
+      "RelativePath": "assets/edit_yellow.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\edit_yellow.svg"
+    },
+    {
+      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\edit-amarelo.png",
+      "SourceId": "Projeto-Gamer-manha",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto-Gamer-manha",
+      "RelativePath": "assets/edit-amarelo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\edit-amarelo.png"
     },
     {
       "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\envelope-icon.png",
@@ -850,6 +884,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\linkedin.svg"
     },
     {
+      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\lixo-amarelo.png",
+      "SourceId": "Projeto-Gamer-manha",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto-Gamer-manha",
+      "RelativePath": "assets/lixo-amarelo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\lixo-amarelo.png"
+    },
+    {
       "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\assets\\logotipo-gamer.png",
       "SourceId": "Projeto-Gamer-manha",
       "SourceType": "Discovered",
@@ -1613,6 +1664,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\G2_Esports_2019_lightmode.png"
+    },
+    {
+      "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\G2_Esportslogo_square.png",
+      "SourceId": "Projeto-Gamer-manha",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto-Gamer-manha",
+      "RelativePath": "img/Equipes/G2_Esportslogo_square.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\G2_Esportslogo_square.png"
     },
     {
       "Identity": "C:\\Users\\52546124870\\Desktop\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\logo-fortaleza-1024.png",

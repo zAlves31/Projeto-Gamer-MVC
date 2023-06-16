@@ -13,14 +13,10 @@ main {
 
 
 
-
-
-
 /* FORMULÁRIO DE CADASTRO DE EQUIPES */
 main .cadastro-equipes {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 0;
